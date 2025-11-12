@@ -1,0 +1,32 @@
+version: '3.9'
+
+services:
+  flask:
+    build: .
+    container_name: facial_expr_api
+    command: python -m app.api
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./model:/app/model
+    networks:
+      - facialnet
+
+  streamlit:
+    build: .
+    container_name: facial_expr_ui
+    command: streamlit run streamlit_app/app_streamlit.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    depends_on:
+      - flask
+    environment:
+      - API_URL=http://flask:5000
+    volumes:
+      - ./model:/app/model
+    networks:
+      - facialnet
+
+networks:
+  facialnet:
+    driver: bridge

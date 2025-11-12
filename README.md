@@ -1,4 +1,4 @@
-![CI](https://github.com/bosunolaide/facial-expression-recognizer/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/<USERNAME>/facial-expression-recognizer/actions/workflows/ci.yml/badge.svg)
 
 # 😃 Facial Expression Recognition (CNN) — Full-Stack, Dockerized
 
@@ -35,7 +35,6 @@ facial_expression_recognizer/
 ## 🎥 Demo Preview
 
 Below is a preview of the Streamlit app detecting emotions in real-time.
-(Replace `assets/demo.gif` with your own recorded demo GIF.)
 
 ![Demo](assets/demo.gif)
 

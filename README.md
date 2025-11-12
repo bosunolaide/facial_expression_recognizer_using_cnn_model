@@ -1,5 +1,3 @@
-![CI](https://github.com/<USERNAME>/facial-expression-recognizer/actions/workflows/ci.yml/badge.svg)
-
 # 😃 Facial Expression Recognition (CNN) — Full-Stack, Dockerized
 
 Production-style implementation of a **facial expression recognizer** using a **Convolutional Neural Network (CNN)**. 
@@ -31,13 +29,6 @@ facial_expression_recognizer/
 ├── run.sh
 └── README.md
 ```
-
-## 🎥 Demo Preview
-
-Below is a preview of the Streamlit app detecting emotions in real-time.
-
-![Demo](assets/demo.gif)
-
 
 ## 🚀 Quickstart
 ### Docker
